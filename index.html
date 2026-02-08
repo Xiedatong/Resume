@@ -3,174 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xie Datong - Resume 谢大通的简历</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Protected Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        #login-box {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 200px;
+            display: block;
+            margin: 10px auto;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #003D7C;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover { background-color: #002a55; }
+        .error { color: red; margin-top: 10px; font-size: 0.9em; display: none; }
+    </style>
 </head>
 <body>
 
-    <div class="container">
-        <header class="header">
-            <h1>Xie Datong (谢大通)</h1>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> xiedatong@u.nus.edu</p>
-                <p><i class="fas fa-phone"></i> +65-91332287</p>
-                <p><i class="fas fa-map-marker-alt"></i> Singapore</p>
-            </div>
-			<div class="contact-info">
-                <p><i class="fas fa-envelope"></i> xdt18@tsinghua.org.cn</p>
-                <p><i class="fas fa-phone"></i> +86-15152129797</p>
-                <p><i class="fas fa-map-marker-alt"></i> Xuzhou, Jiangsu, China</p>
-            </div>
-        </header>
-
-        <section class="section">
-            <h2 class="section-title">Education</h2>
-            
-            <div class="item">
-                <div class="item-header">
-                    <h3>National University of Singapore (NUS)</h3>
-                    <span class="location">Singapore</span>
-                </div>
-                <div class="item-sub">
-                    <span class="degree">M.Sc. in Energy Systems</span>
-                    <span class="date">Aug. 2025 - Present</span>
-                </div>
-                <ul class="details">
-                    <li>Department of Chemical and Biomolecular Engineering (ChBE, CDE)</li>
-                    <li><strong>GPA:</strong> 4.38 / 5.00 (current)</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="item-header">
-                    <h3>Tsinghua University (THU)</h3>
-                    <span class="location">Beijing, China</span>
-                </div>
-                <div class="item-sub">
-					<span class="degree">B.Eng. in Energy and Power Engineering (ACE Program)</span>
-                    <span class="date">Aug. 2018 - Jun. 2024</span>
-                </div>
-                <ul class="details">
-                    <li>Department of Energy and Power Engineering (DEPE, SME)</li>
-					<li><strong>GPA:</strong> 3.24 / 4.00</li>
-                    <li><strong>Core Courses:</strong> Engineering Thermodynamics, Fluid Mechanics, Heat Transfer, Combustion.</li>
-                    <li><strong>Honors:</strong> Five-Star Volunteer (2021), Outstanding Communist Youth League Member (2021), Scholarship for Reading Excellence (2020), Scholarship for Excellence in Social Work (2020).</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Scientific Research</h2>
-            
-            <div class="item">
-                <div class="item-header">
-                    <h3>Screening of Catalytic Materials & Corrosion Mechanism Analysis</h3>
-                    <span class="location">Beijing, China</span>
-                </div>
-                <div class="item-sub">
-					<span class="title">Independent Researcher</span>
-					<span class="date">Sep. 2021 - Jul. 2024</span>
-				</div>
-                <ul class="details">
-                    <li>Prepared nano catalysts with large specific surface areas; compared catalytic performance for photothermal synergistic degradation of HFC-134a.</li>
-                    <li>Independently designed an automated data processing program using <strong>MATLAB</strong>.</li>
-                    <li>Successfully synthesised regenerated catalysts using the hydrothermal method.</li>
-					<li><strong>Publication:</strong> 3rd Author in <em>Applied Thermal Engineering</em> (SCI, Q1, IF 6.1).
-                        <a href="1-s2.0-S1359431125008038-main.pdf" target="_blank" style="color: #003D7C; text-decoration: underline;">
-                            <i class="fas fa-file-pdf"></i> [View PDF]
-                        </a> 
-                    </li>
-					<li><strong>Publication:</strong> 2nd Author in <em>Journal of Engineering Thermophysics</em> (EI).
-                        <a href="R134a光热协同降解催化材料筛选研究_王天浩.pdf" target="_blank" style="color: #003D7C; text-decoration: underline;">
-                            <i class="fas fa-file-pdf"></i> [View PDF]
-                        </a> 
-                    </li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="item-header">
-                    <h3>Classical Trajectory Study of Collision Energy Transfer</h3>
-                    <span class="location">Beijing, China</span>
-                </div>
-                <div class="item-sub">
-					<span class="title">Project Leader</span>
-					<span class="date">Mar. 2021 - Oct. 2021</span>
-				</div>
-                <ul class="details">
-                    <li>Simulated molecular collision dynamics using <strong>Python</strong> to analyze energy transfer mechanisms.</li>
-                    <li>Won <strong>'Best Poster Award'</strong> at the 2021 CCE Poster Day.</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="item-header">
-                    <h3>Hydrogen Cycle Ejection in Proton Exchange Membrane Fuel Cells</h3>
-                    <span class="date">Oct. 2020 - Aug. 2021</span>
-                </div>
-                <div class="item-sub">Team Member</div>
-                <ul class="details">
-                    <li>Designed hydrogen recirculation ejector using <strong>SolidWorks</strong>; fabricated prototype via 3D printing.</li>
-                    <li>Won <strong>3rd Prize</strong> in the 14th University Student Social Practice and Science Contest on Energy Saving & Emission Reduction.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Work Experience</h2>
-
-            <div class="item">
-                <div class="item-header">
-                    <h3>Jiangsu Sifang Clean Energy Equipment Manufacturing</h3>
-                    <span class="date">Sep. 2024 – Jul. 2025</span>
-                </div>
-                <div class="item-sub">Designer & Translator | Xuzhou, China</div>
-                <ul class="details">
-                    <li>Participated in design of 7 boilers (CFB, biomass, pulverized coal).</li>
-                    <li>Designed components (economizer, separator, ignition device) using <strong>CAD</strong>.</li>
-                    <li>Provided consecutive interpretation for cross-border conferences and translated 200+ installation drawings.</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="item-header">
-                    <h3>Career Development Center, Tsinghua University</h3>
-                    <span class="date">Sep. 2022 - Jun. 2024</span>
-                </div>
-                <div class="item-sub">Student Lecturer</div>
-                <ul class="details">
-                    <li>Delivered 20+ lectures on 'Career Planning' and 'Resume Writing' to over 400 students.</li>
-                    <li>Awarded "Excellent Lecturer" title (2023).</li>
-                </ul>
-            </div>
-
-             <div class="item">
-                <div class="item-header">
-                    <h3>Harbin Electric Machinery Co. LTD</h3>
-                    <span class="date">Jun. 2021- Sep. 2021</span>
-                </div>
-                <div class="item-sub">Intern | Harbin, China</div>
-                <ul class="details">
-                    <li>Modeled turbine blades in <strong>SolidWorks</strong> and simulated operation in <strong>Fluent</strong>.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Skills & Languages</h2>
-            <ul class="details">
-                <li><strong>Professional Software:</strong> CAD (Fluent), MATLAB (Fluent), SolidWorks (Basic), Fluent Simulation (Basic).</li>
-                <li><strong>Programming:</strong> M language (Fluent), C/C++ (Basic), Python (Basic).</li>
-                <li><strong>Languages:</strong> Chinese (Native), English (Fluent, IELTS 6.5).</li>
-            </ul>
-        </section>
-        
-        <footer class="footer">
-            <p>&copy; 2026 Datong Xie. Hosted on Cloudflare Pages.</p>
-        </footer>
+    <div id="login-box">
+        <h2>Protected Resume</h2>
+        <p>Please enter password to view.</p>
+        <input type="password" id="password" placeholder="Enter Password" onkeypress="handleEnter(event)">
+        <button onclick="decryptPage()">Unlock</button>
+        <div id="error-msg" class="error">Incorrect password.</div>
     </div>
 
+    <script>
+        // 🔴 关键步骤：请将加密工具生成的红色乱码粘贴到下面的引号中
+        const encryptedData = "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";
+
+        function decryptPage() {
+            const password = document.getElementById("password").value;
+            try {
+                // 尝试解密
+                const bytes = CryptoJS.AES.decrypt(encryptedData, password);
+                const originalHtml = bytes.toString(CryptoJS.enc.Utf8);
+
+                if (originalHtml) {
+                    // 密码正确：用解密后的 HTML 替换整个网页内容
+                    document.open();
+                    document.write(originalHtml);
+                    document.close();
+                } else {
+                    // 密码错误（解密结果为空）
+                    showError();
+                }
+            } catch (e) {
+                // 密码错误（解密过程报错）
+                showError();
+            }
+        }
+
+        function showError() {
+            const errorMsg = document.getElementById("error-msg");
+            errorMsg.style.display = "block";
+            errorMsg.classList.add("shake");
+        }
+
+        function handleEnter(e) {
+            if (e.key === 'Enter') decryptPage();
+        }
+    </script>
 </body>
 </html>
-
